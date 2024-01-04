@@ -22,13 +22,25 @@
   color: var(--clrLight);
 }
 
+.shoppingCart__container{
+  padding-bottom: 40px;
+  display: flex;
+}
+
 .items__container {
+  padding-bottom: 40px;
   width: 90%;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(4, 1fr);
   max-width: 1400px;
   margin: auto;
+}
+
+.shoppingCart__page .items__container{
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 0;
+
 }
 
 .item__card{
@@ -70,7 +82,7 @@
 
 
 @media screen and (max-width: 750px) {
-  .items__container {
+  .items__container, .shoppingCart__page .items__container {
     width: 90%;
     display: grid;
     gap: 20px;

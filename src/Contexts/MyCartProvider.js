@@ -4,7 +4,7 @@ import MyCartContext from "./MyCartContext";
 const MyCartProvider = (props)=>{
     const [cartItems, setCartItems] = useState([]);
     return (
-        <MyCartContext.Provider>
+        <MyCartContext.Provider value={{cartItems, setCartItems}}>
             {props.children}
         </MyCartContext.Provider>
     )

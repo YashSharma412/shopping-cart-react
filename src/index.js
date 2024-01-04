@@ -5,15 +5,18 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import AllitemsProvider from "./Contexts/AllitemsProvider";
+import MyCartProvider from "./Contexts/MyCartProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <AllitemsProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </AllitemsProvider>
+    <MyCartProvider>
+      <AllitemsProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </AllitemsProvider>
+    </MyCartProvider>
   </React.StrictMode>
 );
 

@@ -1,6 +1,6 @@
 import React,{useEffect, useContext} from "react";
 import AllitemsContext from "../Contexts/AllitemsContext";
-import axios, { all } from "axios";
+import axios from "axios";
 import ItemCard from "./ItemCard";
 
 const HomePage = () => {
@@ -28,7 +28,7 @@ const HomePage = () => {
       <div className="items__container">
         {
           all_items.map((item)=>(
-            <ItemCard item={item} key={item.id} btnType={"addBtn"}/>
+            <ItemCard item={item} itemId={item.id} key={item.id} btnType={"addBtn"}/>
           ))
         }
       </div>
