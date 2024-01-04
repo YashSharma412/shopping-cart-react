@@ -8,10 +8,7 @@ import ShoppingCart from './Components/ShoppingCart';
 // import MyCartContext from './Contexts/MyCartContext';
 
 function App() {
-  // const {cartItems} = useContext(MyCartContext)
-  //   useEffect(()=>{
-  //     localStorage.setItem("cartItems", JSON.stringify(cartItems));
-  //   },[])
+
   return (
     <div className="App">
       <Navbar/>

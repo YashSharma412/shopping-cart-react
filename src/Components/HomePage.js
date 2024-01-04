@@ -5,13 +5,10 @@ import ItemCard from "./ItemCard";
 
 const HomePage = () => {
   const {all_items, setAll_items} = useContext(AllitemsContext);
+  
   useEffect(()=>{
     getAll_items()
   },[])
-  
-  // useEffect(()=>{
-  //   console.log(all_items)
-  // },[all_items])
 
   async function getAll_items(){
     try{
